@@ -1,0 +1,22 @@
+[1/1109] Generating ../../partition_table/partition-table.bin
+FAILED: partition_table/partition-table.bin E:/Program_Files/esp32/my/spi_ga9c01/build/partition_table/partition-table.bin 
+cmd.exe /C "cd /D E:\Program_Files\esp32\my\spi_ga9c01\build\esp-idf\partition_table && E:\Program_Files\esp32\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/partitions_two_ota.csv E:/Program_Files/esp32/my/spi_ga9c01/build/partition_table/partition-table.bin && E:\Program_Files\esp32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E echo "Partition table binary generated. Contents:" && E:\Program_Files\esp32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E echo ******************************************************************************* && E:\Program_Files\esp32\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/gen_esp32part.py -q --offset 0x8000 --flash-size 2MB -- E:/Program_Files/esp32/my/spi_ga9c01/build/partition_table/partition-table.bin && E:\Program_Files\esp32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -E echo *******************************************************************************"
+Partitions tables occupies 3.1MB of flash (3211264 bytes) which does not fit in configured flash size 2MB. Change the flash size in menuconfig under the 'Serial Flasher Config' menu.
+[2/1109] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj
+[3/1109] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/E_/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls/port/sha/parallel_engine/esp_sha512.c.obj
+[4/1109] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_semaphore.c.obj
+[5/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[6/1109] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_cond_var.c.obj
+[7/1109] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_local_storage.c.obj
+[8/1109] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj
+[9/1109] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_rwlock.c.obj
+[10/1109] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread.c.obj
+[11/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj
+[12/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj
+[13/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj
+[14/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj
+[15/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj
+[16/1109] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj
+[17/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj
+[18/1109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj
+ninja: build stopped: subcommand failed.

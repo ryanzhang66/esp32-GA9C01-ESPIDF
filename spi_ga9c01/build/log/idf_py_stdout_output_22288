@@ -1,0 +1,83 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 6 dependencies:
+[1/6] espressif/cmake_utilities (0.5.3)
+[2/6] espressif/esp_lcd_ili9341 (1.2.0)
+[3/6] espressif/esp_lcd_touch (1.1.1)
+[4/6] espressif/esp_lcd_touch_cst816s (1.0.3)
+[5/6] idf (5.1.2)
+[6/6] lvgl/lvgl (8.3.9)
+-- Project sdkconfig file E:/Program_Files/esp32/my/spi_ga9c01/sdkconfig
+-- App "main" version: 1
+-- Adding linker script E:/Program_Files/esp32/my/spi_ga9c01/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/ld/esp32.peripherals.ld
+-- ESP_LCD_ILI9341: 1.2.0
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__cmake_utilities espressif__esp_lcd_ili9341 espressif__esp_lcd_touch espressif__esp_lcd_touch_cst816s esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/app_trace E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/app_update E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bt E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/cmock E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/console E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/cxx E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/driver E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/efuse E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp-tls E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_coex E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_eth E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_event E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_gdbstub E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hid E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_server E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_https_ota E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_https_server E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_lcd E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_local_ctrl E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_mm E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_netif E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_netif_stack E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_partition E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_phy E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_pm E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_psram E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_ringbuf E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_timer E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/espcoredump E:/Program_Files/esp32/my/spi_ga9c01/managed_components/espressif__cmake_utilities E:/Program_Files/esp32/my/spi_ga9c01/managed_components/espressif__esp_lcd_ili9341 E:/Program_Files/esp32/my/spi_ga9c01/managed_components/espressif__esp_lcd_touch E:/Program_Files/esp32/my/spi_ga9c01/managed_components/espressif__esp_lcd_touch_cst816s E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/freertos E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/hal E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/heap E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/http_parser E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/idf_test E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/ieee802154 E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/json E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/log E:/Program_Files/esp32/my/spi_ga9c01/managed_components/lvgl__lvgl E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/lwip E:/Program_Files/esp32/my/spi_ga9c01/main E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/mqtt E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/newlib E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/nvs_flash E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/openthread E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/perfmon E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/protobuf-c E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/pthread E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/sdmmc E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/soc E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/spiffs E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/tcp_transport E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/ulp E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/unity E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/usb E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/vfs E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/wear_levelling E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/wifi_provisioning E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Program_Files/esp32/my/spi_ga9c01/build
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lcd_init/lcd_init.c.obj
+[2/9] Linking C static library esp-idf\main\libmain.a
+[3/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file E:/Program_Files/esp32/my/spi_ga9c01/sdkconfig
+Compiler supported targets: xtensa-esp32-elf
+
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: 1
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/efuse E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/freertos E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/hal E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/log E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/main E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/components/micro-ecc E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/newlib E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/soc E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader
+[1/1] cmd.exe /C "cd /D E:\Program_Files\esp32\my\spi_ga9c01\build\bootloader\esp-idf\esptool_py && E:\Program_Files\esp32\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6820 bytes. 0x7e0 bytes (7%) free.
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable main.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated E:/Program_Files/esp32/my/spi_ga9c01/build/main.bin
+[7/7] cmd.exe /C "cd /D E:\Program_Files\esp32\my\spi_ga9c01\build\esp-idf\esptool_py && E:\Program_Files\esp32\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/Program_Files/esp32/my/spi_ga9c01/build/partition_table/partition-table.bin E:/Program_Files/esp32/my/spi_ga9c01/build/main.bin"
+main.bin binary size 0x2d3c0 bytes. Smallest app partition is 0x100000 bytes. 0xd2c40 bytes (82%) free.

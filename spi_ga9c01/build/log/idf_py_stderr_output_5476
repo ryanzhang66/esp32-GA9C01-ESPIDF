@@ -1,0 +1,17 @@
+fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2
+Compiler supported targets: xtensa-esp32-elf
+
+fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2
+fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/openthread/openthread'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/openthread/openthread/.git' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/openthread/openthread

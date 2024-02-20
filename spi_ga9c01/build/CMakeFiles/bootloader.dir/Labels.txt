@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+E:/Program_Files/esp32/my/spi_ga9c01/build/CMakeFiles/bootloader
+E:/Program_Files/esp32/my/spi_ga9c01/build/CMakeFiles/bootloader.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/CMakeFiles/bootloader-complete.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+E:/Program_Files/esp32/my/spi_ga9c01/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

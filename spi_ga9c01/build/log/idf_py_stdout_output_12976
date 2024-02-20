@@ -1,0 +1,33 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+'E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2' is on a file system that doesnot record ownership
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2'
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 6 dependencies:
+[1/6] espressif/cmake_utilities (0.5.3)
+[2/6] espressif/esp_lcd_ili9341 (1.2.0)
+[3/6] espressif/esp_lcd_touch (1.1.1)
+[4/6] espressif/esp_lcd_touch_cst816s (1.0.3)
+[5/6] idf (5.1.2)
+[6/6] lvgl/lvgl (8.3.9)
+-- Project sdkconfig file E:/Program_Files/esp32/my/spi_ga9c01/sdkconfig
+-- App "main" version: 1
+-- Adding linker script E:/Program_Files/esp32/my/spi_ga9c01/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script E:/Program_Files/esp32/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/ld/esp32.peripherals.ld
+-- ESP_LCD_ILI9341: 1.2.0
+-- Configuring incomplete, errors occurred!
+See also "E:/Program_Files/esp32/my/spi_ga9c01/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+E:\Program_Files\esp32\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SE:\Program_Files\esp32\my\spi_ga9c01 -BE:\Program_Files\esp32\my\spi_ga9c01\build

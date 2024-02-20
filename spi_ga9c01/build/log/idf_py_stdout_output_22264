@@ -1,0 +1,3031 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (221) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (224) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (335) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (336) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (374) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (375) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (387) cpu_start: Pro cpu up.[0m
+[0;32mI (387) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (407) cpu_start: Pro cpu start user code[0m
+[0;32mI (407) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (407) cpu_start: Application information:[0m
+[0;32mI (411) cpu_start: Project name:     main[0m
+[0;32mI (416) cpu_start: App version:      1[0m
+[0;32mI (420) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (427) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (433) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (438) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (443) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (448) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (479) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (485) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (500) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (513) app_start: Starting scheduler on CPU0[0m
+[0;32mI (518) app_start: Starting scheduler on CPU1[0m
+[0;32mI (518) main_task: Started on CPU0[0m
+[0;32mI (528) main_task: Calling app_main()[0m
+[0;32mI (528) main: Initialize SPI bus[0m
+[0;32mI (528) main: Install panel IO[0m
+[0;32mI (538) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (548) main: Install GA9C01 panel driver[0m
+[0;32mI (548) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (558) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (888) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (888) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1038) main: Initialize I2C bus[0m
+[0;32mI (1038) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (63) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (91) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7092
+load:0x40078000,len:15584
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (62) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Feb 16 2024 13:16:00[0m
+[0;32mI (64) boot: Multicore bootloader[0m
+[0;32mI (68) boot: chip revision: v3.0[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (76) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (81) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (85) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x4008ab68[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x40081a85[0m
+[0;32mI (103) boot: Enabling RNG early entropy source...[0m
+[0;32mI (108) boot: Partition Table:[0m
+[0;32mI (112) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (119) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (127) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (134) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (142) boot: End of partition table[0m
+[0;32mI (146) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4e350h (320336) map[0m
+[0;32mI (270) esp_image: segment 1: paddr=0005e378 vaddr=3ffb0000 size=01ca0h (  7328) load[0m
+[0;32mI (273) esp_image: segment 2: paddr=00060020 vaddr=400d0020 size=49458h (300120) map[0m
+[0;32mI (384) esp_image: segment 3: paddr=000a9480 vaddr=3ffb1ca0 size=007f8h (  2040) load[0m
+[0;32mI (385) esp_image: segment 4: paddr=000a9c80 vaddr=40080000 size=0f4cch ( 62668) load[0m
+[0;32mI (424) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (424) boot: Disabling RNG early entropy source...[0m
+[0;32mI (435) cpu_start: Multicore app[0m
+[0;32mI (436) cpu_start: Pro cpu up.[0m
+[0;32mI (436) cpu_start: Starting app cpu, entry point is 0x400813c0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     main[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Feb 16 2024 20:09:43[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  d28f6f59ea4d1c49...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (488) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (492) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (497) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (502) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (509) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (515) heap_init: At 3FFBB408 len 00024BF8 (146 KiB): DRAM[0m
+[0;32mI (521) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (528) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (534) heap_init: At 4008F4CC len 00010B34 (66 KiB): IRAM[0m
+[0;32mI (542) spi_flash: detected chip: generic[0m
+[0;32mI (545) spi_flash: flash io: dio[0m
+[0;33mW (549) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (563) app_start: Starting scheduler on CPU0[0m
+[0;32mI (567) app_start: Starting scheduler on CPU1[0m
+[0;32mI (567) main_task: Started on CPU0[0m
+[0;32mI (577) main_task: Calling app_main()[0m
+[0;32mI (577) main: Initialize SPI bus[0m
+[0;32mI (577) main: Install panel IO[0m
+[0;32mI (587) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) main: Install GA9C01 panel driver[0m
+[0;32mI (597) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (937) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (937) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1087) main: Initialize I2C bus[0m
+[0;32mI (1087) main: Initialize touch component[0m
